@@ -6,11 +6,9 @@
 /*   By: yohanafi <yohanafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 14:34:15 by yohanafi          #+#    #+#             */
-/*   Updated: 2023/04/17 11:24:24 by yohanafi         ###   ########.fr       */
+/*   Updated: 2023/04/24 13:04:44 by yohanafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_toupper(int c)
 {

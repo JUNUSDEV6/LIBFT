@@ -6,7 +6,7 @@
 /*   By: yohanafi <yohanafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 12:25:44 by yohanafi          #+#    #+#             */
-/*   Updated: 2023/04/24 11:51:48 by yohanafi         ###   ########.fr       */
+/*   Updated: 2023/04/24 12:58:51 by yohanafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,24 +93,12 @@ char	**ft_split(char const *s, char c)
 	char			**dst;
 	unsigned int	num_wds;
 
-	printf("c = %c\n", c);
-	if (!s) {
+	if (!s)
 		return (NULL);
-	}
-		printf("noooon\n");
 	num_wds = ft_cnt_wds(s, c);
 	dst = (char **)malloc(sizeof(char *) * (num_wds + 1));
 	if (!dst)
 		return (NULL);
 	dst = ft_split_wds(s, c, dst, num_wds);
 	return (dst);
-}
-
-
-int main() {
-	char **lol = ft_split("", -1);
-	if (lol == NULL)
-		printf("null\n");
-	if (!lol[0])
-		printf("lol\n");
 }
